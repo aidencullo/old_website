@@ -2,16 +2,12 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-}
-img {
   width : 500px;
   height : auto;
-  class : center;
 }
-.trail { /* className for the trail elements */
-    position: absolute;
-    height: 6px; width: 6px;
-    border-radius: 3px;
-    background: teal;
-  }
+#newdiv {
+  width: 3em;
+  height: 3em;
+  background-color: red;
+  position: absolute;
+}

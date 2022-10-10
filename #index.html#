@@ -4,10 +4,10 @@
 
 </head>
 <body>
-	<p>
+`	<p>
 		Soy un ser humano
-	</p>
-	
+</p>
+<div></d>	
 	<ul>
 		<li><a href = "Media/Resume.pdf">Resume</a></li>
 		<li><a href = "bio.html">Bio</a></li>
@@ -19,5 +19,5 @@
 	<script src="script/script.js"></script>
 
 	<div id="newdiv"></div>
-</body>
+	  </body>
 </html>
