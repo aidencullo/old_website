@@ -5,9 +5,12 @@
   width : 500px;
   height : auto;
 }
-#newdiv {
-  width: 3em;
-  height: 3em;
-  background-color: red;
-  position: absolute;
+div{
+  position:absolute;
+  transform:translate(-50%,-50%);
+  height:35px;
+  width:35px;
+  background-color: green;
+  border-radius:50%;
+  border:2px solid black;
 }
