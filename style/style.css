@@ -5,12 +5,3 @@
   width : 500px;
   height : auto;
 }
-#circle{
-  position:absolute;
-  transform:translate(-50%,-50%);
-  height:35px;
-  width:35px;
-  background-color: green;
-  border-radius:50%;
-  border:2px solid black;
-}
