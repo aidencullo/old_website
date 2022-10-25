@@ -5,10 +5,9 @@
   width : 500px;
   height : auto;
 }
-#squaree{
-    left: 100px;
-    top:100px;
+#squaree {
     width:100px;
     height:100px;
-    backgroud:green;
+    background:green;
+position:absolute;
 }

@@ -14,4 +14,6 @@ function getCursorPosition(event) {
 
     document.getElementById("squaree").style.left = event.clientX;
     document.getElementById("squaree").style.top = event.clientY;
- }
+
+
+}
