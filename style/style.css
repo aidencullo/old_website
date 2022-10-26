@@ -13,20 +13,20 @@ a:hover {
 }
 .btn-group button {
   background-color: #04AA6D; /* Green background */
-  border: 1px solid green; /* Green border */
+  border: 1px solid black; /* Green border */
   color: white; /* White text */
   padding: 10px 24px; /* Some padding */
   width: 100%; /* Set a width if needed */
   display: block; /* Make the buttons appear below each other */
 }
 .btn-group button:hover {
-  color: white; /* White text */
-    background: black;
+  color: blue; /* White text */
+  background: black;
+  border: 1px solid white;/* Green border */
 }
 .btn-group button:not(:last-child) {
   border-bottom: none; /* Prevent double borders */
 }
-
 ul.no-bullets {
   list-style-type: none;
   margin: 0;
