@@ -3,7 +3,33 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body onmousemove="getCursorPosition(event)">
-	
+
+  <script type = "text/javascript">
+    var ball = document.createElement("img");
+    document.body.appendChild(ball);
+
+    ball.src = "media/jones.png";
+    ball.style.width = "80px";
+    ball.style.left = "0px";
+    ball.style.top = "0px";
+
+    ball.style.position = "absolute"
+
+    var boundX = window.innerWidth;
+    var boundY = window.innerHeight;
+
+    var speed = 10;
+
+    function screensaver () {
+	     var posX = ball.offsetLeft;
+       var posY = ball.offsetTop;
+
+       ball.style.left = ball.x + speed + 'px'
+       ball.style.top = ball.y + speed + 'px'
+       setTimeout(screensaver, 20);
+
+  }
+  </script>
 	<div class = "btn-group">
 	  <ul class="no-bullets">
 	    <li><a href = "media/Resume.pdf"><button>Resume</button></a></li>
@@ -14,7 +40,5 @@
 	    <li><a href = "reading.html"><button>What I'm reading</button></a></li>
 	  </ul>
 	<div/>
-	<script src="script/script.js"></script>
-	<div id="squaree"></div>
 </body>
 </html>

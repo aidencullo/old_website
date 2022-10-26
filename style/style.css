@@ -18,6 +18,8 @@ a:hover {
   padding: 10px 24px; /* Some padding */
   width: 100%; /* Set a width if needed */
   display: block; /* Make the buttons appear below each other */
+  transition: color 0.5s ease;
+  transition: background 0.5s ease;
 }
 .btn-group button:hover {
   color: blue; /* White text */
@@ -39,14 +41,4 @@ ul.no-bullets {
   width : 500px;
   height : auto;
 }
-#squaree {
-    width:100px;
-    height:100px;
-    background:green;
-    position:absolute;
-    z-index:-1;
-    opacity:50%;
-}
-#centerdiv {
-    text-align: center;
-}
+#myCanvas { background:#fff; border:1px solid #cbcbcb; }
