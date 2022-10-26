@@ -1,17 +1,36 @@
-ul {
-    display: inline-block;
-    text-align: left;
-    list-style-type: none;
+a:link {
+    text-decoration: none;
 }
+a:visited {
+    text-decoration: none;
+}
+/* selected link */
+a:active {
+    text-decoration: none;
+}
+a:hover {
+    color:green;
+}
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  width: 100%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+.btn-group button:hover {
+  color: white; /* White text */
+    background: black;
+}
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
 ul.no-bullets {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-li {
-   border-bottom: none !mportant;
-   position: relative;
-   margin: 2em 0;
 }
 #center {
   display: block;
