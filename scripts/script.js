@@ -1,5 +1,4 @@
 // Moving image
-
 var face = document.createElement("img");
 document.body.appendChild(face);
 face.src = "media/jones.png";
@@ -12,11 +11,12 @@ face.style.position = "absolute";
 var boundX = window.innerWidth;
 var boundY = window.innerHeight;
 
-var speed = 10;
+var speed = 5;
 var x = 1;
 var y = 1;
 var posX = face.offsetLeft;
 var posY = face.offsetTop;
+var angle = 0;
 
 function screensaver () {
     posX = face.offsetLeft;
@@ -34,9 +34,13 @@ function screensaver () {
     if(posY < 0){
 	y *= -1;
     }
+
+    //increase total angle of rotation of image
+    angle += 5;
     
     face.style.left = posX + (speed * x) + 'px';
     face.style.top = posY + (speed * y) + 'px';
-    
+    face.style.transform = 'rotate(' + angle + 'deg)';
 }
+// call every 20 milliseconds
 setInterval(screensaver, 20);
