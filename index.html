@@ -1,37 +1,9 @@
 <html>
 <head>
-<!--
     <link rel="stylesheet" href="style/style.css">
-    -->
 </head>
 <body>
 
-  <script type = "text/javascript">
-    alert("test")
-    var ball = document.createElement("img");
-      document.body.appendChild(ball);
-      ball.src = "media/jones.png";
-      ball.style.width = "80px";
-      ball.style.left = "0px";
-      ball.style.top = "0px";
-
-      ball.style.position = "absolute";
-
-      var boundX = window.innerWidth;
-      var boundY = window.innerHeight;
-
-      var speed = 10;
-      function screensaver () {
-          var posX = ball.offsetLeft;
-          var posY = ball.offsetTop;
-
-          ball.style.left = ball.x +  speed + 'px';
-          ball.style.top = ball.y + speed + 'px';
-      }
-      window.setInterval(screensaver, 20);
-  </script>
-<!--
-  
   <div class = "btn-group">
 	  <ul class="no-bullets">
 	    <li><a href = "media/Resume.pdf"><button>Resume</button></a></li>
@@ -42,6 +14,7 @@
 	    <li><a href = "reading.html"><button>What I'm reading</button></a></li>
 	  </ul>
 	<div/>
--->
+
+	<script src="scripts/script.js"></script>
 </body>
 </html>
