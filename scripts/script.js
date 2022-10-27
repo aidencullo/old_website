@@ -1,4 +1,4 @@
-// Moving image
+// Moving imag;e
 var face = document.createElement("img");
 document.body.appendChild(face);
 face.src = "media/jones.png";
@@ -41,6 +41,15 @@ function screensaver () {
     face.style.left = posX + (speed * x) + 'px';
     face.style.top = posY + (speed * y) + 'px';
     face.style.transform = 'rotate(' + angle + 'deg)';
+
+    if(posX <= boundX/2 && (posX + speed * x) >= boundX/2){
+	face.src = "media/jones1.png";
+    }
+    if(posX >= boundX/2 && (posX + speed * x) <= boundX/2){
+	face.src = "media/jones.png";
+    }
+
+    
 }
 // call every 20 milliseconds
 setInterval(screensaver, 20);
