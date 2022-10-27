@@ -4,6 +4,7 @@
 </head>
 <body>
 
+<!--  
   <div class = "btn-group">
 	  <ul class="no-bullets">
 	    <li><a href = "media/Resume.pdf"><button>Resume</button></a></li>
@@ -14,6 +15,8 @@
 	    <li><a href = "reading.html"><button>What I'm reading</button></a></li>
 	  </ul>
 	<div/>
+	-->
+
 	<script src="scripts/script.js"></script>
 </body>
 </html>

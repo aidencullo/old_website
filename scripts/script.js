@@ -1,11 +1,13 @@
-var ball = document.createElement("img");
-document.body.appendChild(ball);
-ball.src = "media/jones.png";
-ball.style.width = "80px";
-ball.style.left = "0px";
-ball.style.top = "0px";
+// Moving image
 
-ball.style.position = "absolute";
+var face = document.createElement("img");
+document.body.appendChild(face);
+face.src = "media/jones.png";
+face.style.width = "80px";
+face.style.left = "0px";
+face.style.top = "0px";
+
+face.style.position = "absolute";
 
 var boundX = window.innerWidth;
 var boundY = window.innerHeight;
@@ -13,17 +15,17 @@ var boundY = window.innerHeight;
 var speed = 10;
 var x = 1;
 var y = 1;
-var posX = ball.offsetLeft;
-var posY = ball.offsetTop;
+var posX = face.offsetLeft;
+var posY = face.offsetTop;
 
 function screensaver () {
-    posX = ball.offsetLeft;
-    posY = ball.offsetTop;
+    posX = face.offsetLeft;
+    posY = face.offsetTop;
 
-    if(posX + ball.offsetWidth > boundX){
+    if(posX + face.offsetWidth > boundX){
 	x *= -1;
     }
-    if(posY + ball.offsetHeight > boundY){
+    if(posY + face.offsetHeight > boundY){
 	y *= -1;
     }
     if(posX < 0){
@@ -33,7 +35,8 @@ function screensaver () {
 	y *= -1;
     }
     
-    ball.style.left = posX + (speed * x) + 'px';
-    ball.style.top = posY + (speed * y) + 'px';
+    face.style.left = posX + (speed * x) + 'px';
+    face.style.top = posY + (speed * y) + 'px';
+    
 }
 setInterval(screensaver, 20);

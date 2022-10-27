@@ -34,11 +34,3 @@ ul.no-bullets {
   margin: 0;
   padding: 0;
 }
-#center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width : 500px;
-  height : auto;
-}
-#myCanvas { background:#fff; border:1px solid #cbcbcb; }
