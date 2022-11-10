@@ -34,7 +34,7 @@ ul.no-bullets {
   margin: 0;
   padding: 0;
 }
-img {
-  height: auto;
-  width:100px;
+#profile {
+  height: 400px;
+  width: auto;
 }
