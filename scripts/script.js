@@ -1,22 +1,22 @@
 // Moving imag;e
-var face = document.createElement("img");
-document.body.appendChild(face);
-face.src = "media/jones.png";
-face.style.width = "80px";
-face.style.left = "0px";
-face.style.top = "0px";
+// var face = document.createElement("img");
+// document.body.appendChild(face);
+// face.src = "media/jones.png";
+// face.style.width = "80px";
+// face.style.left = "0px";
+// face.style.top = "0px";
 
-face.style.position = "absolute";
+// face.style.position = "absolute";
 
-var boundX = window.innerWidth;
-var boundY = window.innerHeight;
+// var boundX = window.innerWidth;
+// var boundY = window.innerHeight;
 
-var speed = 5;
-var x = 1;
-var y = 1;
-var posX = face.offsetLeft;
-var posY = face.offsetTop;
-var angle = 0;
+// var speed = 5;
+// var x = 1;
+// var y = 1;
+// var posX = face.offsetLeft;
+// var posY = face.offsetTop;
+// var angle = 0;
 
 function screensaver () {
     posX = face.offsetLeft;
@@ -52,4 +52,5 @@ function screensaver () {
     
 }
 // call every 20 milliseconds
-setInterval(screensaver, 20);
+// put this on pause while i'm applying to jobs ....
+//setInterval(screensaver, 20);
